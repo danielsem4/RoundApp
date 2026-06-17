@@ -17,3 +17,52 @@ captures
 !*.xcworkspace/contents.xcworkspacedata
 **/xcshareddata/WorkspaceSettings.xcsettings
 node_modules/
+
+# --- Security / signing (never commit) ---
+*.keystore
+*.jks
+keystore.properties
+*.p12
+*.mobileprovision
+google-services.json
+GoogleService-Info.plist
+
+# --- Environment / secrets ---
+.env
+.env.*
+!.env.example
+
+# --- Android build artifacts ---
+*.apk
+*.aab
+*.ap_
+*.dex
+release/
+
+# --- Kotlin / JVM diagnostics ---
+*.hprof
+hs_err_pid*
+replay_pid*
+
+# --- Kotlin Multiplatform / JS ---
+kotlin-js-store/
+.kotlin/
+
+# --- iOS / Xcode / CocoaPods ---
+Pods/
+DerivedData/
+*.xcworkspace/xcuserdata/
+*.xcuserstate
+*.xcscmblueprint
+xcschememanagement.plist
+
+# --- Logs ---
+*.log
+logs/
+
+# --- Editor / IDE (beyond IntelliJ) ---
+.fleet/
+.vscode/
+*.swp
+*.swo
+*~

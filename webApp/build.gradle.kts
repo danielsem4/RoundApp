@@ -20,9 +20,13 @@ kotlin {
 
     sourceSets {
         commonMain.dependencies {
-            implementation(projects.shared)
-
+            implementation(projects.composeApp)
+            implementation(libs.compose.runtime)
             implementation(libs.compose.ui)
+        }
+
+        jsMain.dependencies {
+            implementation(libs.wrappers.browser)
         }
     }
 }
