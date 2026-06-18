@@ -14,7 +14,6 @@ import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
-import androidx.compose.material3.TextButton
 import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
@@ -22,6 +21,7 @@ import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import org.example.roundapp.core.designsystem.components.AppTextButton
 import org.example.roundapp.core.presentation.ObserveAsEvents
 import org.koin.compose.viewmodel.koinViewModel
 
@@ -49,9 +49,10 @@ fun HomeScreen(state: HomeState, onAction: (HomeAction) -> Unit) {
             TopAppBar(
                 title = { Text("RoundApp") },
                 actions = {
-                    TextButton(onClick = { onAction(HomeAction.Logout) }) {
-                        Text("Sign out")
-                    }
+                    AppTextButton(
+                        text = "Sign out",
+                        onClick = { onAction(HomeAction.Logout) },
+                    )
                 },
             )
         },
