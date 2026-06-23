@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="title_welcome">ברוכים הבאים ל-RoundApp</string>
+    <string name="label_email">אימייל</string>
+    <string name="hint_email">אנא הזן את כתובת האימייל שלך</string>
+    <string name="label_password">סיסמה</string>
+    <string name="hint_password">אנא הזן את הסיסמה שלך</string>
+    <string name="button_login">התחבר</string>
+    <string name="error_invalid_email">כתובת האימייל אינה תקינה</string>
+    <string name="error_login_failed">אימייל או סיסמה שגויים</string>
+    <string name="error_no_internet">אין חיבור לאינטרנט</string>
+    <string name="error_server">משהו השתבש, נסה שוב</string>
+
+</resources>

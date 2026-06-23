@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="title_welcome">مرحبا بك في RoundApp</string>
+    <string name="label_email">البريد الإلكتروني</string>
+    <string name="hint_email">من فضلك أدخل بريدك الإلكتروني</string>
+    <string name="label_password">كلمة المرور</string>
+    <string name="hint_password">من فضلك أدخل كلمة المرور</string>
+    <string name="button_login">تسجيل الدخول</string>
+    <string name="error_invalid_email">البريد الإلكتروني غير صالح</string>
+    <string name="error_login_failed">البريد الإلكتروني أو كلمة المرور غير صحيحة</string>
+    <string name="error_no_internet">لا يوجد اتصال بالإنترنت</string>
+    <string name="error_server">حدث خطأ، حاول مرة أخرى</string>
+
+</resources>

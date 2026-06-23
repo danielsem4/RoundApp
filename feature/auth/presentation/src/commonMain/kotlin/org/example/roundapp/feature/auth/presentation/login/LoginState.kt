@@ -1,19 +1,26 @@
 package org.example.roundapp.feature.auth.presentation.login
 
+import androidx.compose.foundation.text.input.TextFieldState
+import org.example.roundapp.core.presentation.ui.UiText
+
 data class LoginState(
-    val email: String = "",
-    val password: String = "",
-    val isLoading: Boolean = false,
-    val error: String? = null,
+    val emailTextState: TextFieldState = TextFieldState(),
+    val passwordTextState: TextFieldState = TextFieldState(),
+    val isEmailValid: Boolean = false,
+    val emailError: UiText? = null,
+    val passwordError: UiText? = null,
+    val loginError: UiText? = null,
+    val isLoggingIn: Boolean = false,
+    val canLogin: Boolean = false,
+    val isPasswordVisible: Boolean = false,
 )
 
-sealed interface LoginEvent {
-    data object LoginSuccess : LoginEvent
-    data class Error(val message: String) : LoginEvent
+sealed interface LoginAction {
+    data object OnLoginClick : LoginAction
+    data object OnInputTextFocusGain : LoginAction
+    data object OnTogglePasswordVisibilityClick : LoginAction
 }
 
-sealed interface LoginAction {
-    data class EmailChanged(val value: String) : LoginAction
-    data class PasswordChanged(val value: String) : LoginAction
-    data object Submit : LoginAction
+sealed interface LoginEvent {
+    data object Success : LoginEvent
 }

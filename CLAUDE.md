@@ -4,6 +4,7 @@ This file is loaded automatically by Claude Code in every session. Follow these 
 
 Kotlin Multiplatform project. Targets: Android, iOS, Web (wasmJs + js). UI: Compose Multiplatform. Root package: `org.example.roundapp`.
 
+after you create code or something do not Build and verify compiles on Android, ill do it not you.
 ---
 
 ## 1. Architecture

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="title_welcome">Добро пожаловать в RoundApp</string>
+    <string name="label_email">Электронная почта</string>
+    <string name="hint_email">Введите вашу электронную почту</string>
+    <string name="label_password">Пароль</string>
+    <string name="hint_password">Введите ваш пароль</string>
+    <string name="button_login">Войти</string>
+    <string name="error_invalid_email">Неверный адрес электронной почты</string>
+    <string name="error_login_failed">Неверная электронная почта или пароль</string>
+    <string name="error_no_internet">Нет подключения к интернету</string>
+    <string name="error_server">Что-то пошло не так, попробуйте снова</string>
+
+</resources>
